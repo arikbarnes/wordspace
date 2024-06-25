@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>חלל של מילים</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="startScreen">
+    <h1>ברוכים הבאים לחלל של מילים</h1>
+    <label for="username">הכנסי את שמך:</label>
+    <input type="text" id="username">
+    <button id="submitButton">אשרי שם</button>
+    <p id="welcomeMessage"></p>
+    <button id="startButton" style="display: none;">התחילי משחק</button>
+  </div>
+  <canvas id="gameCanvas" style="display: none;"></canvas>
+  <audio id="backgroundMusic" loop>
+    <source src="background.mp3" type="audio/mpeg">
+    דפדפן זה לא תומך בהשמעת אודיו.
+  </audio>
+  <audio id="shootSound">
+    <source src="shoot.mp3" type="audio/mpeg">
+    דפדפן זה לא תומך בהשמעת אודיו.
+  </audio>
+  <audio id="explosionSound">
+    <source src="explosion.mp3" type="audio/mpeg">
+    דפדפן זה לא תומך בהשמעת אודיו.
+  </audio>
+  <script src="game.js"></script>
+</body>
+</html>
